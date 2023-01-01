@@ -31,8 +31,8 @@ from tqdm import tqdm
 from datetime import datetime
 
 from datasets.generic import Batch
-from datasets.flyingthings3d_hplflownet import FT3D,FlyingThings3DSubset_Occlusion
-from datasets.kitti_hplflownet import Kitti,Kitti_Occlusion
+from datasets.flyingthings3d_hplflownet import FT3D
+from datasets.kitti_hplflownet import Kitti
 
 
 from model.pt_RAFTSceneFlow import pt_RSF
