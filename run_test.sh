@@ -1,0 +1,10 @@
+python test.py \
+--weights /trained_model_path \
+--ft3d_dataset_dir /dataset_path \
+--kitti_dataset_dir /dataset_path \
+--exp_path pt \
+--batch_size 16 \
+--gpus 0,1,2,3 \
+--max_points 8192 \
+--iters 32 \
+--root ./ \
