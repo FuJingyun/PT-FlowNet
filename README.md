@@ -39,26 +39,26 @@ Run the following script for 3D reconstruction:
 python3 data_preprocess/process_kitti.py RAW_DATA_PATH SAVE_PATH/KITTI_processed_occ_final
 ```
 
-### Train
+## Train
 ```Shell
 sh train.sh
 ```
 `ft3d_dataset_dir` and `kitti_dataset_dir` are the preprocessed dataset paths, please specify the storage location of the dataset on disk.
 `exp_path` is the experiment folder name and `root` is the project root path.
 
-### Train_refine
+## Train_refine
 ```Shell
 sh train_refine.sh
 ```
 Please add the path of the pre-trained model through `--weights` parameter. 
 
 
-### Test
+## Test
 Afer training, you can test the model on both `FT3D`and `KITTI` datasets as follows:
 ```Shell
 sh test.sh
 ```
-### Test_refine
+## Test_refine
 ```Shell
 sh test_refine.sh
 ```
