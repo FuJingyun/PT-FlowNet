@@ -39,7 +39,7 @@ Download and unzip [KITTI Scene Flow Evaluation 2015](http://www.cvlibs.net/down
 Run the following script for 3D reconstruction:
 
 ```bash
-python3 data_preprocess/process_kitti.py RAW_DATA_PATH SAVE_PATH/KITTI_processed_occ_final
+python data_preprocess/process_kitti.py --raw_data_path=RAW_DATA_PATH --save_path=SAVE_PATH/KITTI_processed_occ_final --calib_path=util/calib_cam_to_cam
 ```
 
 ## Train
