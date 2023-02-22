@@ -47,7 +47,7 @@ python data_preprocess/process_kitti.py --raw_data_path=RAW_DATA_PATH --save_pat
 sh train.sh
 ```
 `ft3d_dataset_dir` and `kitti_dataset_dir` are the preprocessed dataset paths, please specify the storage location of the dataset on disk.
-`exp_path` is the experiment folder name and `root` is the project root path.
+`exp_path` is the experiment folder name and `root` is the project root path. The memory requirement for network training is at least 9573 MiB.
 
 ## Train_refine
 ```Shell
@@ -65,7 +65,7 @@ sh test.sh
 ```Shell
 sh test_refine.sh
 ```
-`--weights` is the absolute path of checkpoint file.
+`--weights` is the absolute path of checkpoint file. The memory requirement for inference is 5249 MiB.
 
 ## Acknowledgement
 Our code is based on [PV-RAFT](https://github.com/weiyithu/PV-RAFT) and [point-transformer](https://github.com/POSTECH-CVLab/point-transformer). We also refer to [FLOT](https://github.com/valeoai/FLOT) and [HPLFlowNet](https://github.com/laoreja/HPLFlowNet). 
