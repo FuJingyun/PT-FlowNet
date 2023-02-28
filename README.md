@@ -46,7 +46,7 @@ python data_preprocess/process_kitti.py --raw_data_path=RAW_DATA_PATH --save_pat
 ```Shell
 sh train.sh
 ```
-`ft3d_dataset_dir` and `kitti_dataset_dir` are the preprocessed dataset paths, please specify the storage location of the dataset on disk.
+`ft3d_dataset_dir` and `kitti_dataset_dir` are the preprocessed dataset paths, please specify the storage location of the dataset on disk. Relevant data file paths can also be predefined in `./tools/parser.py`.
 `exp_path` is the experiment folder name and `root` is the project root path. The memory requirement for network training is at least 9573 MiB.
 
 ## Train_refine
